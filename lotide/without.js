@@ -12,3 +12,6 @@ const without = function(array1,array2) {
 // test cases
 without([1, 2, 3], [1, 2]); // => [2, 3]
 without(["1", "2", "3"], [1, "2", "3"]); // => ["1", "2"]
+
+const words = ["hello", "world", "lighthouse"];
+without(words, ["lighthouse"]); 
