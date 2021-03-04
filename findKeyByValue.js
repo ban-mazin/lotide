@@ -1,4 +1,12 @@
-const findKeyByValue = function (key, value) {
+const findKeyByValue = function (object, value){
+   for (let key in object) {
+    //console.log(key);
+    if (object[key] === (value)) {
+      return key;
+    }
+
+  }
+
 
 
 }
@@ -9,5 +17,5 @@ const bestTVShowsByGenre = {
   drama:  "The Wire"
 };
 
-console.log((findKeyByValue.keys(bestTVShowsByGenre, "The Wire")), "drama");
-console.log(findKeyByValue.keys(bestTVShowsByGenre, "That '70s Show"), undefined);
+console.log((findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama"));
+console.log((findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined));
