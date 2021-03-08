@@ -1,11 +1,11 @@
 const assertEqual = function(actual, expected) {
-if (actual ===  expected) {
-  console.log('Assertion Passed: 1 === 1');
-}
-else {
-  console.log('Assertion Failed: "Lighthouse Labs" !== "Bootcamp"');
-}
-}
-// TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
+  const fail = "🔴";
+  const pass = "✅";
+  if (actual !== expected) {
+    console.log(`${fail}${fail}${fail} Assertion Failed: ${actual} !== ${expected}`);
+  } else {
+    console.log(`${pass}${pass}${pass} Assertion Passed: ${actual} === ${expected}`);
+  }
+};
+
+module.exports = assertEqual;
