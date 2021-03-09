@@ -13,3 +13,7 @@ const assertArraysEqual  = function (arrayA, arrayB) {
 };
 console.log(assertArraysEqual(['novel'], ['story'])) // => true
 
+
+
+
+module.exports = assertArraysEqual ;

@@ -5,3 +5,4 @@ const tail = function(array) {
 
 const result = tail(["Hello", "Lighthouse", "Labs"]);
 
+module.exports = tail;
